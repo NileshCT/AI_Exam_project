@@ -43,7 +43,6 @@ def predict_class():
     Type1=int(request.args.get("Type1"))
     Type2=int(request.args.get("Type2"))
     prediction=model.predict([[Age,BS_Fast,BS_pp,Plasma_R,Plasma_F,HbA1c,Normal,Type1,Type2]])
-    print(prediction[0])
     return "Model prediction is"+str(prediction)
 
 
